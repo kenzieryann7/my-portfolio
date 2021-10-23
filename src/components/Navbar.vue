@@ -1,6 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark border-bottom">
     <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">Makenzie Noggle</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -18,7 +19,7 @@
             >Introduction</router-link
           >
           <router-link :to="{ name: 'Main' }" class="nav-link"
-            >Main</router-link
+            >Portfolio</router-link
           >
         </div>
       </div>

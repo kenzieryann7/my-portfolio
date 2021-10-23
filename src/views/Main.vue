@@ -1,14 +1,20 @@
 <template>
-  <Instructions title="Title" instructions="Lorum." />
+  <div class="container-fluid">
+    <div class="card bg-dark text-white shadow">
+      <div class="card-body">
+        <PortfolioView />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-import Instructions from "@/components/Instructions.vue";
+import PortfolioView from "@/components/PortfolioView.vue";
 
 export default {
   name: "Main",
   components: {
-    Instructions
-  }
+    PortfolioView,
+  },
 };
 </script>

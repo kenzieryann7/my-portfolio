@@ -35,3 +35,26 @@
   right: 0;
   bottom: 0;
 }
+
+.btn-purple {
+  background: #91219e;
+}
+
+.btn-purple:hover {
+  background: #6c1a75;
+}
+
+.nav-pills .nav-link {
+  background: none;
+  color: white;
+}
+
+.nav-pills .nav-link:hover {
+  background: #6c1a75;
+  color: whitesmoke;
+}
+
+.nav-pills .nav-link.active {
+  background: #91219e;
+  color: whitesmoke;
+}
