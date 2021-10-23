@@ -1,25 +1,34 @@
 <template>
-  <h1 class="mb-5">
-    <span class="fw-bold text-muted me-3">{{ course }}</span
-    ><br />
-    <span class="fw-bold">{{ title }}</span>
-  </h1>
-
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row mb-3">
       <div class="col-6">
-        <div class="card mb-5">
+        <h1 class="text-start">
+          <span class="fw-bold me-3 text-white">Hi, I'm Kenzie Noggle</span
+          ><br />
+          <span class="fw-bold">{{ title }}</span>
+        </h1>
+
+        <div class="card bg-dark text-white shadow mb-3">
           <div class="card-header fw-bold">{{ cardTitle }}</div>
           <div class="card-body">{{ cardBody }}</div>
         </div>
+        <router-link :to="{ name: 'Main' }" class="btn btn-primary fw-bold">{{
+          buttonLabel
+        }}</router-link>
+      </div>
+
+      <div class="col-6">
+        <div class="card bg-dark text-white shadow">
+          <div class="card-body">
+            <img
+              src="@/assets/intro-me.png"
+              class="img-fluid"
+              alt="Personal Image"
+            />
+          </div>
+        </div>
       </div>
     </div>
-
-    <router-link
-      :to="{ name: 'Main' }"
-      class="btn btn-lg btn-primary fw-bold"
-      >{{ buttonLabel }}</router-link
-    >
   </div>
 </template>
 
@@ -43,3 +52,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+img {
+  opacity: 0.8;
+}
+</style>

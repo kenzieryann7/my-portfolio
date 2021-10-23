@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-sm navbar-light bg-light border-bottom">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark border-bottom">
     <div class="container-fluid">
       <button
         class="navbar-toggler"
@@ -31,8 +31,8 @@ export default {
   name: "Navbar",
   props: {
     expandSize: String,
-    links: Array
-  }
+    links: Array,
+  },
 };
 </script>
 

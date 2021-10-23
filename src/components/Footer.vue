@@ -1,10 +1,10 @@
 <template>
-  <div>
-    <div class="container-fluid mt-5 border-top pt-3 text-small">
+  <div
+    class="navbar navbar-dark bg-dark text-white border-top text-small footer"
+  >
+    <div class="container-fluid">
       <div class="row">
-        <div class="col text-start">
-          &copy; {{ year }} Oregon State University
-        </div>
+        <div class="col text-start">&copy; {{ year }} Kenzie Noggle</div>
         <div class="col text-end">
           <a href="#" @click="toggleVersion" class="">
             {{ version }}
@@ -33,7 +33,7 @@ export default {
   name: "Footer",
   data: () => {
     return {
-      showVersion: false
+      showVersion: false,
     };
   },
   props: {},
@@ -43,21 +43,19 @@ export default {
     },
     version() {
       let version = "";
-
       if (this.showVersion) {
         version = document.lastModified;
       } else {
         version = "Version";
       }
-
       return version;
-    }
+    },
   },
   methods: {
     toggleVersion() {
       this.showVersion = !this.showVersion;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -66,11 +64,9 @@ export default {
 .text-small {
   font-size: 0.8em;
 }
-
 a {
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
